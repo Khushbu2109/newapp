@@ -4,6 +4,7 @@ import altair as alt
 import pandas as pd
 from datetime import time, datetime
 
+
 st.title("Hello World")
 
 # st.header("My header is this, it is given with a divider below", divider="rainbow")
@@ -134,3 +135,14 @@ if coffee:
 
 if cola:
      st.write("Here you go 🥤")
+
+
+# Day 15
+
+st.header('st.latex')
+
+st.latex(r'''
+     a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
+     \sum_{k=0}^{n-1} ar^k =
+     a \left(\frac{1-r^{n}}{1-r}\right)
+     ''')
